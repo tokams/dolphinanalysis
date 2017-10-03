@@ -4,7 +4,7 @@ from time import gmtime, strftime
 
 print("heheh")
 print(strftime("%Y-%m-%d %H:%M:%S", gmtime()))
-wb = openpyxl.load_workbook('C:\workspace\dolphin\test.xlsx')
+wb = openpyxl.load_workbook('./test.xlsx')
 sh = wb.get_active_sheet()
 print(strftime("%Y-%m-%d %H:%M:%S", gmtime()))
 with open('testsmall.csv', 'wb') as f:
